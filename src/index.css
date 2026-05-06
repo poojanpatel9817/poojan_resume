@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:ital,opsz,wght@0,100..900;1,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-ink: #1A1A1A;
+  --color-cream: #FDFCF0;
+  --color-accent: #800020; /* Burgundy */
+  --color-accent-soft: rgba(128, 0, 32, 0.1);
+}
+
+@layer base {
+  body {
+    @apply bg-cream text-ink font-sans transition-colors duration-300 antialiased;
+  }
+  
+  .dark body {
+    @apply bg-[#0C0C0C] text-[#FDFCF0];
+    --color-cream: #0C0C0C;
+    --color-ink: #FDFCF0;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-serif tracking-tight;
+  }
+
+  ::selection {
+    @apply bg-accent/20;
+  }
+}
+
+.markdown-body h1 { @apply text-3xl font-bold mt-8 mb-4 border-b border-ink/10 pb-2; }
+.markdown-body h2 { @apply text-2xl font-semibold mt-6 mb-3; }
+.markdown-body p { @apply my-4 leading-relaxed; }
+.markdown-body ul { @apply list-disc ml-6 my-4; }
+.markdown-body blockquote { @apply border-l-4 border-accent pl-4 italic text-ink/70; }
+.markdown-body code { @apply bg-accent/5 px-1 rounded font-mono text-sm; }
