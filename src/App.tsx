@@ -62,7 +62,7 @@ function Navbar() {
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-cream/80 dark:bg-zinc-950/80 backdrop-blur-md py-3 shadow-sm' : 'bg-transparent py-6'
+      isScrolled ? 'bg-cream/80 dark:bg-zinc-950/80 backdrop-blur-md py-3 shadow-sm' : 'bg-cream py-6'
     }`}>
       <div className="max-w-6xl mx-auto px-6 flex justify-between items-center">
         <Link to="/" className="font-serif text-2xl font-bold tracking-tight text-ink hover:text-accent transition-colors">
