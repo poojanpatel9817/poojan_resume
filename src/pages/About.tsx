@@ -81,7 +81,7 @@ export default function About() {
             <img 
               src={aboutData.headshot} 
               alt={aboutData.name} 
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              className="w-full h-full object-top transition-transform duration-700 group-hover:scale-110"
               referrerPolicy="no-referrer"
             />
           </motion.div>
