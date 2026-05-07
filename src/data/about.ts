@@ -2,7 +2,7 @@ export const aboutData = {
   name: "Poojan Patel",
   title: "Assistant Professor of Finance, Bryant University",
   tagline: "Research at the intersection of generative AI, corporate disclosures, and textual analysis in finance.",
-  headshot: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=300&h=300", // EDIT: Replace with your headshot path
+  headshot: "/poojan_resume/IMG_1079.JPG", // EDIT: Replace with your headshot path
   email: "ppatel24@bryant.edu",
   altEmail: "ppatel9817@gmail.com",
   phone: "+1 (551) 263-4625",
